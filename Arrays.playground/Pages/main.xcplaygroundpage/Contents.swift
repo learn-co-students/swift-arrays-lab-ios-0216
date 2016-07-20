@@ -13,6 +13,7 @@
  */
 // write your code here
 
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -22,7 +23,7 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var shoppingList = ["Bread", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,10 +33,12 @@
  */
 // write your code here
 
+var futureShoppingList :[String]
 
-
-
-
+futureShoppingList[0] = "Bread"
+futureShoppingList[1] = "Cheese"
+futureShoppingList[2] = "Lettuce"
+futureShoppingList[3] = "Tomatoes"
 
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose values will never change and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
@@ -43,7 +46,7 @@
 // write your code here
 
 
-
+let cheeseSandwich = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,7 +56,7 @@
 // write your code here
 
 
-
+var dessertList : [string] = ["Cookie dough", "Icecream"]
 
 
 
@@ -65,7 +68,7 @@
 
 
 
-
+var afternoonAttendance : [Int] = [ 2, 10, 3, 15, 7]
 
 
 
@@ -76,6 +79,8 @@
 // write your code here
 
 
+var itemToPrint = shoppingList[2]
+print(itemToPrint)
 
 
 
@@ -87,7 +92,7 @@
  */
 // write your code here
 
-
+futureShoppingList[1] = "Chicken"
 
 
 
@@ -101,6 +106,13 @@
 
 
 
+func lifesEssentials(list: [String]) -> Bool {
+    
+    if list[0].lowercaseString == "bread" {
+        return true
+    }
+    return false
+}
 
 
 
@@ -110,7 +122,7 @@
 // write your code here
 
 
-
+print(lifesEssentials(shoppingList))
 
 
 
@@ -121,6 +133,7 @@
  */
 // write your code here
 
+print(lifesEssentials(dessertList))
 
 
 
