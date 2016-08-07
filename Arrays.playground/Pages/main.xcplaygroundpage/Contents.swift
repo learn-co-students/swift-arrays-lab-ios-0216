@@ -12,10 +12,7 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
-
-
-
+let list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question2
@@ -23,7 +20,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,18 +29,15 @@
  */
 // write your code here
 
-
-
-
-
+var futureShoppingList: [String] = []
+futureShoppingList.appendContentsOf(["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"])
 
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose values will never change and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
-
-
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,7 +47,7 @@
 // write your code here
 
 
-
+let dessertlist:[String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -63,19 +57,16 @@
  */
 // write your code here
 
-
-
-
-
-
-
+let afternoonAttendance:[Int] = [2, 10, 3, 15, 7]
 
 /*: question7
  ### 7. Assign the value at the second position in the 'shoppingList' array to a variable called 'itemToPrint' and print it to the screen.
  */
 // write your code here
 
+shoppingList[1] = "item to print"
 
+print(shoppingList)
 
 
 
@@ -87,11 +78,17 @@
  */
 // write your code here
 
+for ingredient in futureShoppingList{
+    
+    if ingredient == "Cheese"{
+     
+       let index = futureShoppingList.indexOf(ingredient)
+        futureShoppingList[index!] = "Chicken"
+    }
+}
 
 
-
-
-
+print(futureShoppingList)
 
 
 /*: question9
@@ -100,7 +97,15 @@
 // write your code here
 
 
-
+func lifeEssential(ingredients:[String])->Bool{
+    
+    if ingredients[0] == "Bread"{
+    
+    return true
+    }
+    
+    return false
+}
 
 
 
@@ -111,7 +116,7 @@
 
 
 
-
+print(lifeEssential(shoppingList))
 
 
 
@@ -122,7 +127,6 @@
 // write your code here
 
 
-
-
+print(lifeEssential(dessertlist))
 
 //: On solution branch, there should be a link here to the solution file.
